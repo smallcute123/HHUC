@@ -5,6 +5,35 @@
   align-items: center;
   box-sizing: border-box;
 } 
+.h1{
+  padding-top: 10px;
+  font-size: 25px;
+  font-weight: lighter;
+  font-family: "KAITI";
+  float: left;
+}
+.h2{
+  padding-top: 8px;
+  font-size: 22px;
+  font-weight: 260;
+  font-family: "华文行楷";
+}
+.item{
+  display: flex;
+  flex-direction: row;
+}
+.icon{
+  float: left;
+  width: 45px;
+  height: 45px;
+}
+.icon_small{
+  float: left;
+  width: 30px;
+  height: 30px;
+}
+
+
 
 /** home.wxss **/
 .page-bottom{
@@ -50,27 +79,7 @@
   width: 100%
 }
 
-.userinfo {
-  display: flex;
-  flex-direction: column;
-  padding: 30rpx 0 30rpx 140rpx;
-}
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
-}
-.userinfo-nickname {
-  color: #aaa;
-  padding: 30rpx 0 30rpx 30rpx;
-}
-.usermotto {
-  margin-top: 50px;
-}
-.user-motto{
-   margin-left: 30px;
-}
+
 .hr{
   width: 100%;
   height: 15px;
@@ -79,10 +88,6 @@
 .line{
   border: 1px solid #cccccc;
   opacity: 0.2;
-}
-.item{
-  display: flex;
-  flex-direction: row;
 }
 .order{
   padding-top: 15px;

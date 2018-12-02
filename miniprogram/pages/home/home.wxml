@@ -26,6 +26,10 @@
     <view class='item'>
       <view class='order'>我的照片</view>
     </view>
+    <view class='line'></view>
+    <view class='item'>
+      <view class='order'>我的消息</view>
+    </view>
 
     <view class='hr'></view>
     <view class='item'>
@@ -35,6 +39,10 @@
     <view class='item'>
       <view class='order'>主题设置</view>
     </view>
+    <view class='line'></view>
+    <view class='item'>
+      <view class='order'>意见反馈</view>
+    </view>
     </scroll-view>
   </view>
 </view><!--page-bottom-->
@@ -43,7 +51,64 @@
   <scroll-view scroll-y class='func'>
   <image class="btn" bindtap="tap_ch" src="../../images/icon/btn.png"></image>
   <image class="img" src='../../images/image/home.jpg'></image>
-   
+  <view class='item'>
+    <image class='icon' src='../../images/icon/学校.png'></image>
+    <text class='h1'>河海大学常州校区</text>
+  </view>
+  <view class='hr'></view>
+
+  <view class="index-menu">
+		<navigator class="index-menu-item" wx:for="{{indexmenu}}" wx:key="{{item.url}}" url="../{{item.url}}/{{item.url}}">
+			<image src="{{item.icon}}"></image>
+			<text>{{item.text}}</text>
+		</navigator>
+	</view>
+  
+  <view class='hr'></view>
+  <view class="item">
+    <image class='icon_small' src='../../images/icon/喇叭公告.png'></image>
+    <text class='h2'>Board</text><text class='h2'>公告栏</text>
+    <text class='board'></text>
+  </view>
+  <view class='hr'></view>
+  <view class="item">
+    <image class='icon_small' src='../../images/icon/新闻.png'></image>
+    <text class='h2'>News</text><text class='h2'>河海头条</text>
+    <text class='board'></text>
+  </view>
+  <view class='hr'></view>
+  <view class="item">
+    <image class='icon_small' src='../../images/icon/大事记.png'></image>
+    <text class='h2'>Event</text><text class='h2'>大事记</text>
+    <text class='board'></text>
+  </view>
+  <view class='hr'></view>
+  <view class="item">
+    <image class='icon_small' src='../../images/icon/笔 (2).png'></image>
+    <text class='h2'>河海大学常州校区</text>
+  </view>
+  <view class='hr'></view>
+  <view class="item">
+    <image class='icon_small' src='../../images/icon/笔 (3).png'></image>
+    <text class='h2'>河海大学常州校区</text>
+  </view>
+  <view class='hr'></view>
+  <view class="item">
+    <image class='icon_small' src='../../images/icon/笔 (4).png'></image>
+    <text class='h2'>河海大学常州校区</text>
+  </view>
+  <view class='hr'></view>
+  <view class="item">
+    <image class='icon_small' src='../../images/icon/笔 (6).png'></image>
+    <text class='h2'>河海大学常州校区</text>
+  </view>
+  <view class='hr'></view>
+  <view class="item">
+    <image class='icon_small' src='../../images/icon/笔 (7).png'></image>
+    <text class='h2'>河海大学常州校区</text>
+  </view>
+  <view class='hr'></view>
+  <view class='hr'></view>
   </scroll-view>
 </view><!--page_top-->
 

@@ -8,7 +8,43 @@ Page({
    * 页面的初始数据
    */
   data: {
-    
+    indexmenu: [
+      {
+        'icon': './../../images/icon/笔记.png',
+        'text': '随性笔记',
+        'url': 'space'
+      },
+      {
+        'icon': './../../images/icon/倒计时.png',
+        'text': '考试倒计时',
+        'url': 'service'
+      },
+      {
+        'icon': './../../images/icon/查询.png',
+        'text': '空教室查询',
+        'url': 'conference'
+      },
+      {
+        'icon': './../../images/icon/文件.png',
+        'text': '学习资源',
+        'url': 'resource'
+      },
+      {
+        'icon': './../../images/icon/四六级.png',
+        'text': '四六级',
+        'url': 'question'
+      },
+      {
+        'icon': './../../images/icon/计算机等级.png',
+        'text': '等级考试',
+        'url': 'property'
+      },
+      {
+        'icon': './../../images/icon/更多.png',
+        'text': '敬请期待',
+        'url': 'apply'
+      }
+    ]
   },
 
 
