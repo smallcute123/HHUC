@@ -12,23 +12,39 @@
     <view class="usermotto">
       <text class="user-motto">{{motto}}</text>
     </view>
-
+    <scroll-view scroll-y class='menu'>
     <view class='hr'></view>
     <view class='item'>
-      <view class='order'>消息通知</view>
+      <view class='order'>个人中心</view>
       <!--<view class='detail'><text>有新消息</text></view>-->
     </view>
     <view class='line'></view>
-      <view class='item'>
+    <view class='item'>
+      <view class='order'>我的文件</view>
+    </view>
+    <view class='line'></view>
+    <view class='item'>
+      <view class='order'>我的照片</view>
+    </view>
+
+    <view class='hr'></view>
+    <view class='item'>
       <view class='order'>系统设置</view>
     </view>
-    <view class='hr'></view>
-    <view class='hr'></view>
+    <view class='line'></view>
+    <view class='item'>
+      <view class='order'>主题设置</view>
+    </view>
+    </scroll-view>
   </view>
 </view><!--page-bottom-->
 
 <view bindtouchmove="tap_drag" bindtouchend="tap_end" bindtouchstart="tap_start" class="page-top {{open ? 'c-state1' : ''}}">
-  <image bindtap="tap_ch" src="../../images/icon/btn.png"></image>
+  <scroll-view scroll-y class='func'>
+  <image class="btn" bindtap="tap_ch" src="../../images/icon/btn.png"></image>
+  <image class="img" src='../../images/image/home.jpg'></image>
+   
+  </scroll-view>
 </view><!--page_top-->
 
 </view><!--container-->
