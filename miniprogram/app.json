@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/games/games",
+    "pages/social/social",
+    "pages/robot/robot"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000000",
+    "navigationBarTitleText": "HHUC",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "backgroundColor": "#ffffff",
+    "selectedColor": "#3cc51f",
+    "position": "bottom",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "iconPath": "images/icon/首页.png",
+        "selectedIconPath": "images/icon/首页.png",
+        "text": "首页"
+      },{
+        "pagePath": "pages/games/games",
+        "iconPath": "images/icon/娱乐.png",
+        "selectedIconPath": "images/icon/娱乐.png",
+        "text": "娱乐"
+      },{
+        "pagePath": "pages/social/social",
+        "iconPath": "images/icon/社交.png",
+        "selectedIconPath": "images/icon/社交.png",
+        "text": "社交"
+      },{
+        "pagePath": "pages/robot/robot",
+        "iconPath": "images/icon/客服.png",
+        "selectedIconPath": "images/icon/客服.png",
+        "text": "小盒"
+      }
+    ]
+  }
+}

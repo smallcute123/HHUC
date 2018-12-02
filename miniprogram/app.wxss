@@ -1,0 +1,91 @@
+/**app.wxss**/
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+} 
+
+/** home.wxss **/
+.page-bottom{
+  height: 100%;
+  width: 750rpx;
+  position: fixed; 
+  background-color:white;
+  z-index: 0;
+}
+.page-content{
+  padding-top: 50rpx;
+}
+.page-top{
+  height: 100%;
+  position: fixed;
+  width: 750rpx;
+  background-color: rgb(57, 125, 230);
+  z-index: 0;
+  transition: All 0.4s ease; 
+  -webkit-transition: All 0.4s ease;
+}
+.page-top image{
+  position: absolute;
+  width: 68rpx;
+  height: 38rpx;
+  left: 20rpx;
+  top: 20rpx;
+}
+.c-state1{
+  transform: rotate(0deg) scale(1) translate(60%,0%); 
+  -webkit-transform: rotate(0deg) scale(1) translate(60%,0%); 
+}
+.wc{
+  color: white;
+  padding: 30rpx 0 30rpx 40rpx;
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  padding: 30rpx 0 30rpx 140rpx;
+}
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+.userinfo-nickname {
+  color: #aaa;
+  padding: 30rpx 0 30rpx 30rpx;
+}
+.usermotto {
+  margin-top: 50px;
+}
+.user-motto{
+   margin-left: 30px;
+}
+.hr{
+  width: 100%;
+  height: 15px;
+  background-color: #F4F5F6;
+}
+.line{
+  border: 1px solid #cccccc;
+  opacity: 0.2;
+}
+.item{
+  display: flex;
+  flex-direction: row;
+}
+.order{
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-bottom: 15px;
+  font-size: 15px;
+}
+.detail{
+  font-size: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: #888888;
+  text-align: right;
+}
