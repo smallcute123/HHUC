@@ -12,17 +12,17 @@ Page({
       {
         'icon': './../../images/icon/笔记.png',
         'text': '随性笔记',
-        'url': 'space'
+        'url': 'notes'
       },
       {
         'icon': './../../images/icon/倒计时.png',
         'text': '考试倒计时',
-        'url': 'service'
+        'url': 'exam'
       },
       {
         'icon': './../../images/icon/查询.png',
         'text': '空教室查询',
-        'url': 'conference'
+        'url': 'search'
       },
       {
         'icon': './../../images/icon/文件.png',
@@ -32,17 +32,16 @@ Page({
       {
         'icon': './../../images/icon/四六级.png',
         'text': '四六级',
-        'url': 'question'
+        'url': 'english'
       },
       {
         'icon': './../../images/icon/计算机等级.png',
         'text': '等级考试',
-        'url': 'property'
+        'url': 'computer'
       },
       {
         'icon': './../../images/icon/更多.png',
-        'text': '敬请期待',
-        'url': 'apply'
+        'text': '敬请期待'
       }
     ]
   },

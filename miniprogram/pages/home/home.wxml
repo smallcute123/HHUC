@@ -15,7 +15,7 @@
     <scroll-view scroll-y class='menu'>
     <view class='hr'></view>
     <view class='item'>
-      <view class='order'>个人中心</view>
+      <view class='order'> <navigator url='personalCenter'>个人中心</navigator> </view>
       <!--<view class='detail'><text>有新消息</text></view>-->
     </view>
     <view class='line'></view>
@@ -84,27 +84,26 @@
   </view>
   <view class='hr'></view>
   <view class="item">
-    <image class='icon_small' src='../../images/icon/笔 (2).png'></image>
+    
     <text class='h2'>河海大学常州校区</text>
   </view>
   <view class='hr'></view>
   <view class="item">
-    <image class='icon_small' src='../../images/icon/笔 (3).png'></image>
+      <text class='h2'>河海大学常州校区</text>
+  </view>
+  <view class='hr'></view>
+  <view class="item">
+   
     <text class='h2'>河海大学常州校区</text>
   </view>
   <view class='hr'></view>
   <view class="item">
-    <image class='icon_small' src='../../images/icon/笔 (4).png'></image>
+   
     <text class='h2'>河海大学常州校区</text>
   </view>
   <view class='hr'></view>
   <view class="item">
-    <image class='icon_small' src='../../images/icon/笔 (6).png'></image>
-    <text class='h2'>河海大学常州校区</text>
-  </view>
-  <view class='hr'></view>
-  <view class="item">
-    <image class='icon_small' src='../../images/icon/笔 (7).png'></image>
+  
     <text class='h2'>河海大学常州校区</text>
   </view>
   <view class='hr'></view>
