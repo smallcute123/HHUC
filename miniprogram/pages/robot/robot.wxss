@@ -1,1 +1,147 @@
 /* pages/robot/robot.wxss */
+page {  
+  background-color: #f7f7f7; 
+  height: 100%; 
+}
+.showMsg{ 
+  text-align: center; 
+  /* height:100%; */
+  box-sizing:border-box;  
+}
+.row{
+  padding-top: 15px;
+  width: 100%;
+  overflow: hidden;
+}
+.sendmsg{
+  position: fixed;
+  bottom:0;
+  width: 100%;
+}
+.sendMessage{
+  display: block;
+  height: 80rpx;
+  padding: 10rpx 10rpx; 
+  background-color: #fff; 
+  border-top: 2rpx solid #eee;
+  border-bottom: 2rpx solid #eee; 
+  z-index:3;  
+}
+.name{
+  margin-right: 10rpx;
+}
+.inputbox{
+  float:left;
+   width: 66%;
+   height: 100%;
+   line-height: 80rpx;
+   border-bottom: 1rpx solid #ccc;
+   padding:0 10rpx; 
+   font-size: 35rpx;
+   color: #666;
+}
+.button{
+  float:right;
+  font-size: 35rpx
+}
+.user1{  
+  float: right;
+  width: 60rpx;  
+  height: 60rpx;  
+  border-radius: 50%;   
+  vertical-align: middle;
+  margin-right: 10rpx;
+}
+.div1{
+  width: 70%;
+  float: right;
+}
+.msgbox1{
+  float:right; 
+  margin-right: 10px;
+  vertical-align: middle;
+  background: black;
+  border-radius: 10rpx;
+}
+.text1{
+  margin:8px;
+  color: white;
+  text-align: left;
+}
+.user2{
+  float: left;
+  width: 60rpx;  
+  height: 60rpx;  
+  border-radius: 50%;   
+  vertical-align: middle;
+  margin-left: 10rpx;
+}
+.div2{
+  width: 70%;
+  float: left;
+}
+.msgbox2{
+  float:left;
+  margin-left: 10px;
+  vertical-align: middle;
+  background: rgb(201, 199, 199);
+  border-radius: 10rpx;
+}
+.text2{
+  margin:8px;
+  color: black;
+  text-align: left;
+}
+#flag{
+  margin-bottom: 100rpx;
+  height: 30rpx;
+} 
+.sendMessage view{
+  display: inline-block; 
+  width: 80rpx;
+  height: 80rpx;
+  line-height: 80rpx; 
+  font-size: 60rpx; 
+  text-align: center;
+  color: #999;
+  border: 1rpx solid #ccc;
+  border-radius: 50%;
+  margin-left: 10rpx;
+} 
+.increased{
+  width:100%;
+  /* height: 150rpx; */
+  padding: 40rpx 30rpx;
+  background-color: #fff;
+}
+.increased .image{
+   width: 100rpx;
+   height: 100rpx;
+   border: 3rpx solid #ccc;
+   line-height: 100rpx;
+   text-align: center;
+   border-radius: 8rpx;
+   font-size:35rpx;
+}
+@keyframes slidedown {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(100%);
+    }
+}
+.slidedown {
+    animation: slidedown 0.5s linear ;
+}
+.slideup {
+    animation: slideup 0.5s linear ;
+}
+@keyframes slideup {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}

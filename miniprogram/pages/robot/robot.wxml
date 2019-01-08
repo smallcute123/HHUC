@@ -1,1 +1,58 @@
-<view>敬请期待</view>
+<view class='showMsg' bindtap='outbtn'>
+
+<scroll-view scroll-y="true" class="history" scroll-top="{{scrollTop}}">
+  <view class='row'>
+  <block wx:if='{{res!=" "}}'>
+      <view><image class='user2' src="../../images/image/he.jpg"></image></view>
+      <view class='div2'>
+      <view class="msgbox2">
+       <view class='text2'>{{res}}</view>
+      </view>
+      </view>
+    </block>
+    <block wx:else></block>
+    </view>
+
+  <block wx:for="{{message}}">
+  
+  <view class='row'>    
+    <block wx:if='{{item.msg!=" "}}'>
+      <view><image class='user1' src="{{userInfo.avatarUrl}}"></image></view>
+      <view class='div1'>
+        <view class='msgbox1'>
+          <view class='text1'>{{item.msg}}</view>
+        </view>
+      </view>
+    </block>
+    <block wx:else></block>
+  </view>
+
+  <view class='row'>
+    <block wx:if='{{item.resp!=" "}}'>
+      <view><image class='user2' src="../../images/image/he.jpg"></image></view>
+      <view class='div2'>
+      <view class="msgbox2">
+       <view class='text2'>{{item.resp}}</view>
+      </view>
+      </view>
+    </block>
+    <block wx:else></block>
+  </view>
+
+</block>
+</scroll-view>
+</view>
+
+<view id="flag"></view> 
+
+<view class='sendmsg'>
+  <form class="sendMessage">
+    <input class='inputbox' type='text' name='msg'value="{{msg}}" bindinput='bindChange'/>
+    <view class="add" bindtap='increase'>+</view> 
+    <button class='button' type='primary' formType="reset" size="small" button-hover="blue" bindtap='send'>发送</button>
+  </form>
+   <view class='increased {{aniStyle?"slideup":"slidedown"}}' wx:if="{{increase}}">
+       <view class="image" bindtap='chooseImage'>相册 </view>  
+       
+    </view>
+</view>
