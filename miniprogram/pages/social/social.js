@@ -15,7 +15,12 @@ Page({
   },
   showName: function (e) {
     var name = e.currentTarget.dataset.name;
-
+    if (name=="表白墙")
+    {
+      wx.navigateTo({
+        url: "love",
+      })
+    }
     console.log(name);
   },
   onLoad: function () {
@@ -42,7 +47,7 @@ Page({
     var that = this;
     app.menuConfig = {
       menu: [
-        { 'index': 0, 'menu': '表白墙', 'src': './../../images/icon/表白墙.png','url':'love' },
+        { 'index': 0, 'menu': '表白墙', 'src': './../../images/icon/表白墙.png', },
         { 'index': 1, 'menu': '跳骚市场', 'src': './../../images/icon/跳骚市场.png' },
         { 'index': 2, 'menu': '校园新闻', 'src': './../../images/icon/校园新闻.png' },
         { 'index': 3, 'menu': '敬请期待', 'src': './../../images/icon/更多.png' },
@@ -161,6 +166,17 @@ Page({
         })
       }
     }
+  },
+  click: function (e) {
+        // console.log(e.currentTarget.id)
+        var uId = e.currentTarget.id
+    // console.log(uId)
+    if(uId==1){
+    wx.navigateTo({
+      url: "../pages/love/love" ,
+    })
+    }
   }
+
 })
 
