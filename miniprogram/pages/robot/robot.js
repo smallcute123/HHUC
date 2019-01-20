@@ -12,20 +12,30 @@ Page({
     resp:" ",
     res:"你好呀！我是HHUC的智能小盒，陪伴你在每分每秒 ♥        小盒还可以回答你的任何疑问哦！",
     message: [],
-    increase: false,//图片添加区域隐藏
-    aniStyle: true,//动画效果
+    increase: false,   //图片添加区域隐藏
+    aniStyle: true,    //动画效果
   },
   bindChange(res) {
     this.setData({
       msg: res.detail.value
     })
   },
+
+  //隐藏菜单栏的控制
   increase() {
-    this.setData({
-      increase: true,
-      aniStyle: true
-    })
+    if(this.data.increase==true){
+      this.setData({
+        increase: false,
+      })
+    }else{
+      this.setData({
+        increase: true,
+        aniStyle: true
+      })
+    }
   },
+
+
   send:function(e){
     var newArray = [{ msg:this.data.msg, resp:this.data.res}];    
     //加到其他数据的后面
@@ -48,6 +58,39 @@ Page({
       this.bottom()
     }
   },
+
+
+  chooseImage() {
+    var that = this
+    wx.chooseImage({
+      count: 1, // 默认9
+      sizeType: ['original', 'compressed'],   // 可以指定是原图还是压缩图，默认二者都有
+      sourceType: ['album', 'camera'],    // 可以指定来源是相册还是相机，默认二者都有
+      success: function (res) {
+        // 返回选定照片的本地文件路径列表，tempFilePath可以作为img标签的src属性显示图片
+        var tempFilePaths = res.tempFilePaths
+        console.log(tempFilePaths)
+        wx.uploadFile({
+          url: 'https://www.beamingsunshine.cn', //仅为示例，非真实的接口地址
+          filePath: tempFilePaths[0],
+          name: 'file',
+          headers: {
+            'Content-Type': 'form-data'
+          },
+          success: function (res) {
+            if (res.data) {
+              that.setData({
+                increase: false
+              })
+            /*  websocket.send('{"images":"' + res.data + '","date":"' + utils.formatTime(new Date()) + '","type":"image","nickName":"' + that.data.userInfo.nickName + '","avatarUrl":"' + that.data.userInfo.avatarUrl + '"}')   */
+              that.bottom()
+            }
+          }
+        })
+      }
+    })
+  },
+
   bottom: function () {
     var query = wx.createSelectorQuery()
     query.select('#flag').boundingClientRect()
