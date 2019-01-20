@@ -167,16 +167,9 @@ Page({
       }
     }
   },
-  click: function (e) {
-        // console.log(e.currentTarget.id)
-        var uId = e.currentTarget.id
-    // console.log(uId)
-    if(uId==1){
-    wx.navigateTo({
-      url: "../pages/love/love" ,
-    })
-    }
-  }
+ 
+    
+
 
 })
 
