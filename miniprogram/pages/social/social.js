@@ -21,6 +21,16 @@ Page({
         url: "love",
       })
     }
+    if (name == "跳蚤市场") {
+      wx.navigateTo({
+        url: "tiaosao",
+      })
+    }
+    if (name == "校园新闻") {
+      wx.navigateTo({
+        url: "news",
+      })
+    }
     console.log(name);
   },
   onLoad: function () {
@@ -48,7 +58,7 @@ Page({
     app.menuConfig = {
       menu: [
         { 'index': 0, 'menu': '表白墙', 'src': './../../images/icon/表白墙.png', },
-        { 'index': 1, 'menu': '跳骚市场', 'src': './../../images/icon/跳骚市场.png' },
+        { 'index': 1, 'menu': '跳蚤市场', 'src': './../../images/icon/跳骚市场.png' },
         { 'index': 2, 'menu': '校园新闻', 'src': './../../images/icon/校园新闻.png' },
         { 'index': 3, 'menu': '敬请期待', 'src': './../../images/icon/更多.png' },
         { 'index': 4, 'menu': '敬请期待', 'src': './../../images/icon/更多.png' },

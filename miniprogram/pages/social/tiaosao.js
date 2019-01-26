@@ -1,4 +1,4 @@
-// miniprogram/pages/social/love.js
+// miniprogram/pages/social/tiaosao.js
 Page({
 
   /**
